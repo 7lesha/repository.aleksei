@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .form {
+    text-align: right;
+    margin-bottom: 50px;
+  }
+  
+  .input {
+    padding: 5px;
+  }
+  
+  .button {
+    padding: 5px 10px;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  table,
+  tr,
+  td,
+  th {
+    border: 1px black solid;
+    border-collapse: collapse;
+  }
+  
+  .paginator {
+    margin: 50px auto;
+  }
