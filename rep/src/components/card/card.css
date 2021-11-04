@@ -1,0 +1,14 @@
+.avatar {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.close {
+    margin: 30px auto;
+    padding: 5px 10px;
+}
+
+.img {
+    width: 100%;
+}

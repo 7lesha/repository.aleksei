@@ -1,11 +1,16 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./repo.css";
+import { NavLink } from "react-router-dom";
 
-const Repo = ({repo}) => {
+const Repo = ({repo, number}) => {
   return (
     <tr>
       <td>
-        {repo.name}
+        {number}
+      </td>
+      <td>
+        <NavLink to={"/card/" + repo.owner.login + "/" + repo.name}>{repo.name}</NavLink>
       </td>
       <td>
         {repo.stargazers_count}
@@ -14,7 +19,7 @@ const Repo = ({repo}) => {
         {repo.pushed_at}
       </td>
       <td>
-        <a href={repo.clone_url} className="a">{repo.clone_url}</a>
+        <a href={repo.clone_url} className="a" target="_blank">{repo.clone_url}</a>
       </td>
     </tr>
   );
