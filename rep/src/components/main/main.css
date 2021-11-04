@@ -12,7 +12,9 @@
 }
 
 .table {
+  border-collapse: collapse;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 table,
@@ -20,11 +22,12 @@ tr,
 td,
 th {
   border: 1px black solid;
-  border-collapse: collapse;
+  padding: 5px;
 }
 
 .paginator {
-  margin: 50px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .page {
