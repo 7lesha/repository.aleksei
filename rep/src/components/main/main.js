@@ -32,6 +32,13 @@ const Main = () => {
         <button onClick={() => searchHadler()} className="button">Найти</button>
       </form>
       <table>
+        <tr>
+          <th>N</th>
+          <th>Название</th>
+          <th>Кол. звезд</th>
+          <th>Дата последнего коммита</th>
+          <th>Ссылка</th>
+        </tr>
         {repos.map((repo, index) => {
           <Repo repo={repo} number={index + 1 + currentPage * 10}/>
         })}
