@@ -18,7 +18,7 @@ const Repo = ({repo, number}) => {
         {repo.pushed_at}
       </td>
       <td>
-        <a href={repo.clone_url} className="a" target="_blank">{repo.clone_url}</a>
+        <a href={repo.clone_url} className="a" target="_blank" rel="noreferrer">{repo.clone_url}</a>
       </td>
     </tr>
   );

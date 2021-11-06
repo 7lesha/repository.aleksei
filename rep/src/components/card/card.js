@@ -24,7 +24,7 @@ const Card = (props) => {
       <div className="stars">Кол. звезд: {repo.stargazers_count}</div>
       <div className="date">Дата последнего коммита: {repo.pushed_at}</div>
       <div className="reponames">Имя: {repo.owner?.login}</div>
-      <div className="url">Ссылка: <a href={repo.owner?.html_url} className="a" target="_blank">{repo.owner?.html_url}</a></div>
+      <div className="url">Ссылка: <a href={repo.owner?.html_url} className="a" target="_blank" rel="noreferrer">{repo.owner?.html_url}</a></div>
       <div className="language">Языки: {repo.language}</div>
       <div className="des">Описание репозитория: {repo.description}</div>
       <div className="contr">10 наиболее активных контрибьютеров: </div>
