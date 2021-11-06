@@ -1,4 +1,4 @@
-import { setIsFetching, setRepos } from "../reducers/reposReducer";
+import { setRepos } from "../reducers/reposReducer";
 
 export const getRepos = (searchQuery = "stars:%3E1", currentPage) => {
   if (searchQuery === "") {
