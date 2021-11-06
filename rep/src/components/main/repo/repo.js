@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./repo.css";
-import { NavLink } from "react-router-dom";
 
 const Repo = ({repo, number}) => {
   return (
