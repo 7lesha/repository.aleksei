@@ -24,10 +24,10 @@ const Main = () => {
 
   return (
     <div>
-      <form className="form">
+      <div className="form">
         <input value={searchValue} onChange={(e) =>setSearchValue(e.target.value)} className="input" type="text" placeholder="Поиск"></input>
         <button onClick={() => searchHadler()} className="button">Найти</button>
-      </form>
+      </div>
       <table className="table">
         <tr>
           <th>N</th>
